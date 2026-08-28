@@ -1,0 +1,20 @@
+# 1. Hide all raw and processed medical data
+# This covers the root files and the /data folder
+*.csv
+data/
+
+# 2. Hide all original hospital PDFs
+*.pdf
+
+# 3. Hide all trained model weights (as requested)
+# This covers the /Models/models folder
+*.pkl
+Models/models/
+
+# 4. Hide Python/Jupyter internal junk
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# 5. Hide metrics (usually local logs)
+metrics.txt
